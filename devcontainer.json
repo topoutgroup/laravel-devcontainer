@@ -5,6 +5,14 @@
     "shutdownAction": "stopCompose",
     "workspaceFolder": "/workspaces/laravel",
     "dockerComposeFile": "docker-compose.yaml",
+    "features": {
+        "ghcr.io/metcalfc/devcontainer-features/doppler:0": {}
+    },
+    "containerEnv": {
+        "DOPPLER_PROJECT": "mandalorian-gifs-node",
+        "DOPPLER_CONFIG": "dev",
+        "DOPPLER_TOKEN": "${localEnv:DOPPLER_TOKEN}"
+    },
     "customizations": {
         "vscode": {
             "extensions": [
